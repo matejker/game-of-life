@@ -1,0 +1,13 @@
+table {
+    background-color: #efefef;
+}
+
+td {
+    border: 1px solid #aaa;
+    width: 10px;
+    height: 10px;
+}
+
+td.dead {
+    background: #888;
+}
