@@ -1,5 +1,6 @@
 table {
     background-color: #efefef;
+    margin: auto;
 }
 
 td {
@@ -8,6 +9,11 @@ td {
     height: 10px;
 }
 
-td.dead {
+td.alive {
     background: #888;
+}
+
+#world {
+    text-align: center;
+    width: 100%;
 }
