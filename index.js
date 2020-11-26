@@ -75,7 +75,6 @@ function createNextGen() {
             }
         }
     }
-
 }
 
 function getNeighborCount(row, col) {
