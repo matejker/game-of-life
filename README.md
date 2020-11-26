@@ -7,7 +7,7 @@ So this is all I have to say
 ~ M.A.S.H
 
 Started to read [The Recursive Universe [1]](https://www.amazon.co.uk/Recursive-Universe-Complexity-Scientific-Knowledge/dp/048649098X), 
-once again got amazed by this Conway _toy_. I tried to make _just another implementation_ of Conway's Game of Life, with
+once again, I got amazed by this Conway's _toy_. I tried to make _just another implementation_ of Conway's Game of Life, with
 a decent _copypasta_ from Rob Tomlin's tutorial [2] and fair algorithm and code optimization. 
 
 ## Algorithm
@@ -19,7 +19,7 @@ The original Conway's rules [1] are, if for a given cell:
 2. the number of live neighbours is exactly 3, the cell will live in the next generation; `(0 -> 1)`, `(1 -> 1)`
 3. the number of live neighbours is 1, 4,..., the cell won't live in the next generation; `(0 -> 0)`, `(1 -> 0)`
 
-Algorithm in _pseudoJavaScript_:
+Algorithm in _pseudoJavaScript_ code:
 ```js
 Input: nextGen = Array[n][m]
 Output: currGen = Array[n][m]
