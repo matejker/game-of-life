@@ -22,11 +22,15 @@ The original Conway's rules [1] are, if for a given cell:
 2. the number of live neighbours is exactly 3, the cell will live in the next generation; `(0 -> 1)`, `(1 -> 1)`
 3. the number of live neighbours is 1, 4,..., the cell won't live in the next generation; `(0 -> 0)`, `(1 -> 0)`
 
+[Live demo](./life.html) of _regular_ Game of life.
+
 ### Hexagons
 The game of life on hexagons is bit different as each cell has six neighbors, therefore, the rules are [4], 
 if for a given cell:  
 1. the number of live neighbours is exactly 2, the cell will live in the next generation; `(0 -> 1)`, `(1 -> 1)`  
-2. the number of live neighbours is 1, 3,..., the cell won't live in the next generation; `(0 -> 0)`, `(1 -> 0)`  
+2. the number of live neighbours is 1, 3,..., the cell won't live in the next generation; `(0 -> 0)`, `(1 -> 0)`
+
+[Live demo](./hexagonal.html) of _hexagonal_ Game of life.  
 
 ## References
 [1] William Poundstone (1985), _The Recursive Universe_, NTC Publishing Group ISBN:978-0-8092-5202-2
