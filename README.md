@@ -7,7 +7,7 @@ So this is all I have to say
 ~ M.A.S.H
 
 Started to read [The Recursive Universe [1]](https://www.amazon.co.uk/Recursive-Universe-Complexity-Scientific-Knowledge/dp/048649098X), 
-once again, I got amazed by this Conway's _toy_. I tried to make _just another implementation_ of Conway's Game of Life, with
+once again, I got amazed with this Conway's _toy_. I tried to make _just another implementation_ of Conway's Game of Life, with
 a decent _copypasta_ from Rob Tomlin's tutorial [2] and fair algorithm and code optimization. Real fun starts when you
 try it on various tile shapes (squares, triangles, hexagons, pentagons,...)
 
@@ -16,7 +16,7 @@ try it on various tile shapes (squares, triangles, hexagons, pentagons,...)
 
 ~ Time 1974  
 
-### Squares - the original
+### Squares - the original [[Live demo](./life.html)]
 The original Conway's rules [1] are, if for a given cell:
 1. the number of live neighbours is exactly 2, the cell maintains its status quo into the next generation; `(0 -> 0)`, `(1 -> 1)`
 2. the number of live neighbours is exactly 3, the cell will live in the next generation; `(0 -> 1)`, `(1 -> 1)`
@@ -24,7 +24,7 @@ The original Conway's rules [1] are, if for a given cell:
 
 [Live demo](./life.html) of _regular_ Game of life.
 
-### Hexagons
+### Hexagons [[Live demo](./hexagonal.html)]
 The game of life on hexagons is bit different as each cell has six neighbors, therefore, the rules are [4], 
 if for a given cell:  
 1. the number of live neighbours is exactly 2, the cell will live in the next generation; `(0 -> 1)`, `(1 -> 1)`  
