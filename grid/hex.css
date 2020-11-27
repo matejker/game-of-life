@@ -1,0 +1,54 @@
+.hex {
+    float: left;
+    margin-right: -6px;
+    margin-bottom: -12px;
+}
+
+.hex .left {
+    float: left;
+    width: 0;
+    border-right: 7px solid #efefef;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+}
+
+.hex .middle {
+    float: left;
+    width: 15px;
+    height: 26px;
+    background: #efefef;
+}
+
+.hex .right {
+    float: left;
+    width: 0;
+    border-left: 7px solid #efefef;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+}
+
+.hex.alive .right  {
+    border-left: 7px solid #888;
+}
+
+.hex.alive .middle {
+    background: #888;
+}
+
+.hex.alive .left {
+    border-right: 7px solid #888;
+}
+
+.hex-row {
+    clear: left;
+}
+
+.hex.even {
+    margin-top: 14px;
+}
+
+#world {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}

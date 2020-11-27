@@ -2,16 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./grid/main.css" />
-    <title>Game of life</title>
+    <title>Hexagonal Game of life</title>
+    <link rel="stylesheet" href="./grid/hex.css" />
 </head>
     <body>
-
         <div id="world">
             <input type="button" id="btnstartstop" value="Start Reproducing" onclick="startStopGol();" />
             <input type="button" id="btnreset" value="Reset World" onclick="resetWorld();" />
             <strong>Generation: </strong> <span id="generation">0</span>
         </div>
-        <script src="index.js"></script>
-</body>
+        <script src="./hex.js"></script>
+    </body>
 </html>

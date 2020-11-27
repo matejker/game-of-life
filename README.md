@@ -48,3 +48,5 @@ function life() {
 
 [2] Rob Tomlin (2020), _The Game of Life Using JavaScript_,  
 https://medium.com/javascript-in-plain-english/the-game-of-life-using-javascript-fc1aaec8274f
+
+[3] James Tauber (?), _CSS Hexagon Tutorial._ https://jtauber.github.io/articles/css-hexagon.html
