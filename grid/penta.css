@@ -1,28 +1,159 @@
-.hex {
+.penta {
     float: left;
-    margin-left: 3px;
-    margin-bottom: -26px;
+    margin-right: -26px;
+    margin-bottom: -50px;
 }
-.hex .top {
+
+.penta .left1 {
+    float: left;
     width: 0;
-    border-bottom: 30px solid #6C6;
-    border-left: 104px solid transparent;
-    border-right: 104px solid transparent;
+    border-right: 30px solid #efefef;
+    /* border-top: 52px solid transparent; */
+    border-bottom: 52px solid transparent;
 }
-.hex .middle {
-    width: 208px;
-    height: 60px;
-    background: #6C6;
-}
-.hex .bottom {
+
+.penta .top1 {
     width: 0;
-    border-top: 30px solid #6C6;
-    border-left: 104px solid transparent;
-    border-right: 104px solid transparent;
+    border-bottom: 30px solid #efefef;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
 }
-.hex-row {
+
+.penta .middle {
+    float: left;
+    width: 44px;
+    height: 52px;
+    background: #efefef;
+}
+
+.penta .right1 {
+    float: right;
+    width: 0;
+    border-left: 30px solid #efefef;
+    /* border-top: 52px solid transparent; */
+    border-bottom: 52px solid transparent;
+}
+
+.penta .left2 {
+    float: left;
+    width: 0;
+    border-right: 30px solid #efefef;
+    border-top: 52px solid transparent;
+    /* border-bottom: 52px solid transparent; */
+}
+
+.penta .bottom2 {
+    width: 0;
+    border-top: 30px solid #efefef;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
     clear: left;
 }
-.hex-row.even {
-    margin-left: 105px;
+
+.penta .right2 {
+    float: right;
+    width: 0;
+    border-left: 30px solid #efefef;
+    border-top: 52px solid transparent;
+    /* border-bottom: 52px solid transparent; */
+}
+
+.penta .top3 {
+    width: 0;
+    border-bottom: 30px solid #efefef;
+    border-left: 52px solid transparent;
+    clear: left;
+    /* border-right: 52px solid transparent; */
+}
+
+.penta .bottom3 {
+    width: 0;
+    border-top: 30px solid #efefef;
+    border-left: 52px solid transparent;
+    /* border-right: 52px solid transparent; */
+    clear: left;
+}
+
+.penta .right3 {
+    float: right;
+    width: 0;
+    margin-left: 52px;
+    border-left: 30px solid #efefef;
+    border-top: 52px solid transparent;
+    border-bottom: 52px solid transparent;
+}
+
+.penta .top4 {
+    width: 0;
+    border-bottom: 30px solid #efefef;
+    border-right: 52px solid transparent;
+    clear: right;
+    margin-left: 30px;
+
+    /* border-right: 52px solid transparent; */
+}
+
+.penta .bottom4 {
+    width: 0;
+    border-top: 30px solid #efefef;
+    border-right: 52px solid transparent;
+    /* border-right: 52px solid transparent; */
+    clear: right;
+    margin-left: 30px;
+}
+
+.penta .left4 {
+    float: left;
+    width: 0;
+    border-right: 30px solid #efefef;
+    border-top: 52px solid transparent;
+    border-bottom: 52px solid transparent;
+}
+
+.penta .middle-ort {
+    width: 52px;
+    height: 44px;
+    background: #efefef;
+}
+
+.penta .middle-ort2 {
+    width: 52px;
+    height: 44px;
+    background: #efefef;
+    float: right;
+}
+
+.penta.left {
+    margin-top: 32px;
+    margin-left: 2px;
+}
+
+.penta.right {
+    margin-top: 32px;
+}
+
+.penta.top {
+    margin-top: 0px;
+}
+
+.penta.bottom {
+    margin-top: 86px;
+    margin-left: -78px;
+}
+
+.penta-row {
+    float: left;
+    margin-bottom: -4px;
+}
+
+.penta-row.even {
+    margin-left: 110px;
+    margin-top: -4px;
+    margin-bottom: -8px;
+}
+
+.tile {
+    width: 218px;
+    margin-right: 2px;
+    float: left;
 }
