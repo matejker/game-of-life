@@ -168,3 +168,7 @@
 .penta.alive .top4, .penta.alive .top1, .penta.alive .top3 {
     border-bottom: 15px solid #888;
 }
+
+#world {
+    width: 900px;
+}
