@@ -1,126 +1,126 @@
 .penta {
     float: left;
-    margin-right: -13px;
-    margin-bottom: -25px;
+    margin-right: -7px;
+    margin-bottom: -12px;
 }
 
 .penta .left1 {
     float: left;
     width: 0;
-    border-right: 15px solid #efefef;
-    border-bottom: 26px solid transparent;
+    border-right: 8px solid #efefef;
+    border-bottom: 13px solid transparent;
 }
 
 .penta .top1 {
     width: 0;
-    border-bottom: 15px solid #efefef;
-    border-left: 26px solid transparent;
-    border-right: 26px solid transparent;
+    border-bottom: 8px solid #efefef;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
 }
 
 .penta .middle {
     float: left;
-    width: 22px;
-    height: 26px;
+    width: 11px;
+    height: 13px;
     background: #efefef;
 }
 
 .penta .right1 {
     float: right;
     width: 0;
-    border-left: 15px solid #efefef;
-    border-bottom: 26px solid transparent;
+    border-left: 8px solid #efefef;
+    border-bottom: 13px solid transparent;
 }
 
 .penta .left2 {
     float: left;
     width: 0;
-    border-right: 15px solid #efefef;
-    border-top: 26px solid transparent;
+    border-right: 8px solid #efefef;
+    border-top: 13px solid transparent;
 }
 
 .penta .bottom2 {
     width: 0;
-    border-top: 15px solid #efefef;
-    border-left: 26px solid transparent;
-    border-right: 26px solid transparent;
+    border-top: 8px solid #efefef;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
     clear: left;
 }
 
 .penta .right2 {
     float: right;
     width: 0;
-    border-left: 15px solid #efefef;
-    border-top: 26px solid transparent;
+    border-left: 8px solid #efefef;
+    border-top: 13px solid transparent;
 }
 
 .penta .top3 {
     width: 0;
-    border-bottom: 15px solid #efefef;
-    border-left: 26px solid transparent;
+    border-bottom: 8px solid #efefef;
+    border-left: 13px solid transparent;
     clear: left;
 }
 
 .penta .bottom3 {
     width: 0;
-    border-top: 15px solid #efefef;
-    border-left: 26px solid transparent;
+    border-top: 8px solid #efefef;
+    border-left: 13px solid transparent;
     clear: left;
 }
 
 .penta .right3 {
     float: right;
     width: 0;
-    margin-left: 26px;
-    border-left: 15px solid #efefef;
-    border-top: 26px solid transparent;
-    border-bottom: 26px solid transparent;
+    margin-left: 13px;
+    border-left: 8px solid #efefef;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
 }
 
 .penta .top4 {
     width: 0;
-    border-bottom: 15px solid #efefef;
-    border-right: 26px solid transparent;
+    border-bottom: 8px solid #efefef;
+    border-right: 13px solid transparent;
     clear: right;
-    margin-left: 15px;
+    margin-left: 8px;
 }
 
 .penta .bottom4 {
     width: 0;
-    border-top: 15px solid #efefef;
-    border-right: 26px solid transparent;
+    border-top: 8px solid #efefef;
+    border-right: 13px solid transparent;
     clear: right;
-    margin-left: 15px;
+    margin-left: 8px;
 }
 
 .penta .left4 {
     float: left;
     width: 0;
-    border-right: 15px solid #efefef;
-    border-top: 26px solid transparent;
-    border-bottom: 26px solid transparent;
+    border-right: 8px solid #efefef;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
 }
 
 .penta .middle-ort {
-    width: 26px;
-    height: 22px;
+    width: 13px;
+    height: 11px;
     background: #efefef;
 }
 
 .penta .middle-ort2 {
-    width: 26px;
-    height: 22px;
+    width: 13px;
+    height: 11px;
     background: #efefef;
     float: right;
 }
 
 .penta.left {
-    margin-top: 16px;
+    margin-top: 8px;
     margin-left: 1px;
 }
 
 .penta.right {
-    margin-top: 16px;
+    margin-top: 8px;
 }
 
 .penta.top {
@@ -128,8 +128,8 @@
 }
 
 .penta.bottom {
-    margin-top: 43px;
-    margin-left: -39px;
+    margin-top: 22px;
+    margin-left: -20px;
 }
 
 .penta-row {
@@ -138,13 +138,13 @@
 }
 
 .penta-row.even {
-    margin-left: 55px; /* 110 */
-    margin-top: -2px;
-    margin-bottom: -4px;
+    margin-left: 28px; /* 110 */
+    margin-top: -1px;
+    margin-bottom: -3px;
 }
 
 .tile {
-    width: 109px;
+    width: 55px;
     margin-right: 1px;
     float: left;
 }
@@ -154,21 +154,23 @@
 }
 
 .penta.alive .left4, .penta.alive .left1, .penta.alive .left2 {
-    border-right: 15px solid #888;
+    border-right: 8px solid #888;
 }
 
 .penta.alive .bottom4, .penta.alive .bottom2, .penta.alive .bottom3 {
-    border-top: 15px solid #888;
+    border-top: 8px solid #888;
 }
 
 .penta.alive .right1, .penta.alive .right2, .penta.alive .right3 {
-    border-left: 15px solid #888;
+    border-left: 8px solid #888;
 }
 
 .penta.alive .top4, .penta.alive .top1, .penta.alive .top3 {
-    border-bottom: 15px solid #888;
+    border-bottom: 8px solid #888;
 }
 
 #world {
-    width: 900px;
+    width: 1000px;
+    text-align: center;
+    margin: 10px auto;
 }

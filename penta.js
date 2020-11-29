@@ -1,5 +1,5 @@
-const n = 10;
-const m = 7;
+const n = 25;
+const m = 17;
 
 const tileParts = {
     left: ['right3', 'top3', 'middle-ort', 'bottom3'],
@@ -8,6 +8,13 @@ const tileParts = {
     right: ['left4', 'top4', 'middle-ort2', 'bottom4'],
 }
 
+
+const pentaMoves = {
+    left: [[0, 0, 'top'], [0, 0, 'botom'], [0, -1, 'right'], [0, -1, 'left'], [0, -1, 'top'], [0, -1, 'bottom']],
+    top: [[0, 0, 'bottom'], [0, 0, 'left'], [0, 0, 'right'], [-1, -1, 'right'], [1, -1, 'left']],
+    bottom: [[0, 0, 'top'], [0, 0, 'left'], [0, 0, 'right'], [1, -1, 'right'], [1, -1, 'left']],
+    right: [[0, 0, 'top'], [0, 0, 'bottom'], [0, 1, 'left'], [0, 1, 'top'], [0, 1, 'bottom']],
+}
 
 let started = false;
 let timer;
