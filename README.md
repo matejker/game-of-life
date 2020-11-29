@@ -28,15 +28,15 @@ generations, all such patterns eventually must either disappear, or decompose in
 Rules exhibiting this property are said to be stable. [4]
 
 
-### Orthogonal - the original [[Live demo](./life.html)]
+### Orthogonal - the original [[Live demo](https://matejker.github.io/game-of-life/life.html)]
 The original Conway's rules [1] (`2,3/3`, [4]) are, if for a given cell:
 1. the number of live neighbours is exactly 2, the cell maintains its status quo into the next generation; `(0 -> 0)`, `(1 -> 1)`
 2. the number of live neighbours is exactly 3, the cell will live in the next generation; `(0 -> 1)`, `(1 -> 1)`
 3. the number of live neighbours is 1, 4,..., the cell won't live in the next generation; `(0 -> 0)`, `(1 -> 0)`
 
-[Live demo](./life.html) of _regular_ Game of life.
+[Live demo](https://matejker.github.io/game-of-life/life.html) of _regular_ Game of life.
 
-### Hexagonal [[Live demo](./hexagonal.html)]
+### Hexagonal [[Live demo](https://matejker.github.io/game-of-life/hexagonal.html)]
 The game of life on hexagons is bit different as each cell has six neighbors. In order to preserve existence of gliders,
 the rule `3,5/2` satisfies all three criteria [4], 
 if for a given cell:  
@@ -44,9 +44,9 @@ if for a given cell:
 2. the number of live neighbours is 3 or 5, the cell maintains its status quo into the next generation ; `(0 -> 0)`, `(1 -> 1)`
 3. otherwise, the cell won't live in the next generation; `(0 -> 0)`, `(1 -> 0)`
 
-[Live demo](./hexagonal.html) of _hexagonal_ Game of life. 
+[Live demo](https://matejker.github.io/game-of-life/hexagonal.html) of _hexagonal_ Game of life. 
 
-### Pentagonal [[Live demo](./pentagonal.html)]
+### Pentagonal [[Live demo](https://matejker.github.io/game-of-life/pentagonal.html)]
 Each cell on the "Cairo tiling" pentagonal tessellation has seven neighbors, which is nice as it is between _orthogonal_
 and _hexagonal_ variants. A rule `2,3/3,4,6` seems to be the only rule satisfies all criteria [4], 
 if for a given cell:  
@@ -54,7 +54,10 @@ if for a given cell:
 2. the number of live neighbours is 2 or 3, the cell maintains its status quo into the next generation ; `(0 -> 0)`, `(1 -> 1)`
 3. otherwise, the cell won't live in the next generation; `(0 -> 0)`, `(1 -> 0)`
 
-[Live demo](./pentagonal.html) of _pentagonal_ Game of life on _Cairo tiling_. 
+[Live demo](https://matejker.github.io/game-of-life/pentagonal.html) of _pentagonal_ Game of life on _Cairo tiling_. 
+
+![](./shrimp.png)  
+A :fried_shrimp: example of pentagonal _glider_ on `2,3/3,4,6`, it has period 48 and moves 6 units up.
 
 ## References
 [1] William Poundstone (1985), _The Recursive Universe_, NTC Publishing Group ISBN:978-0-8092-5202-2

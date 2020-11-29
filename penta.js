@@ -27,7 +27,7 @@ const pentaMovesOdd = {
 let started = false;
 let timer;
 let generationCount = 0;
-let evolutionSpeed = 1000;
+let evolutionSpeed = 100;
 
 let currGen = [n];
 let nextGen = [n];
