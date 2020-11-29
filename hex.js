@@ -23,6 +23,10 @@ let evolutionSpeed = 100;
 let currGen = [n];
 let nextGen = [n];
 
+function setSpeed(val) {
+    evolutionSpeed = 1000 - val;
+}
+
 function createGenArrays() {
     for (let i = 0; i < n; i++) {
         currGen[i] = new Array(m);

@@ -6,9 +6,14 @@ let started = false;
 let timer;
 let generationCount = 0;
 let evolutionSpeed = 100;
+console.log(evolutionSpeed);
 
 let currGen = [n];
 let nextGen = [n];
+
+function setSpeed(val) {
+    evolutionSpeed = 1000 - val;
+}
 
 function createGenArrays() {
     for (let i = 0; i < n; i++) {
