@@ -23,7 +23,6 @@ let evolutionSpeed = 100;
 let currGen = [n];
 let nextGen = [n];
 
-
 function createGenArrays() {
     for (let i = 0; i < n; i++) {
         currGen[i] = new Array(m);
@@ -89,8 +88,10 @@ function createNextGen() {
     for (row in currGen) {
         for (col in currGen[row]) {
             let neighbors = getNeighborCount(row, col);
-
-            if (neighbors == 2) {
+             // Using 3,5/2 rule
+            if (neighbors == 3 || neighbors == 5) {
+                nextGen[row][col] = currGen[row][col]
+            } else if (neighbors == 2 && currGen[row][col] == 0) {
                 nextGen[row][col] = 1
             } else {
                 nextGen[row][col] = 0
