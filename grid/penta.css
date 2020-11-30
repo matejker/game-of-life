@@ -117,10 +117,14 @@
 .penta.left {
     margin-top: 8px;
     margin-left: 1px;
+    position: relative;
+    z-index: 5;
 }
 
 .penta.right {
     margin-top: 8px;
+    position: relative;
+    z-index: 5;
 }
 
 .penta.top {
@@ -130,6 +134,8 @@
 .penta.bottom {
     margin-top: 22px;
     margin-left: -20px;
+    position: relative;
+    z-index: 5;
 }
 
 .penta-row {
