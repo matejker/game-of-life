@@ -56,7 +56,7 @@ if for a given cell:
 
 [Live demo](https://matejker.github.io/game-of-life/pentagonal.html) of _pentagonal_ Game of life on _Cairo tiling_. 
 
-![](./shrimp.png)  
+![](./docs/glider/shrimp.png)  
 A :fried_shrimp: example of pentagonal _glider_ on `2,3/3,4,6`, it has period 48 and moves 6 units up.
 
 ## References
