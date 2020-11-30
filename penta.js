@@ -52,6 +52,15 @@ function initGenArrays() {
     }
 }
 
+function randomInitGenArrays() {
+    for (let i = 0; i < n; i++) {
+        for (let j = 0; j < m; j++) {
+            currGen[i][j] = {left: Math.round(Math.random()), top: Math.round(Math.random()), bottom: Math.round(Math.random()), right: Math.round(Math.random())};
+            nextGen[i][j] = {left: Math.round(Math.random()), top: Math.round(Math.random()), bottom: Math.round(Math.random()), right: Math.round(Math.random())};
+        }
+    }
+}
+
 function createWorld() {
     let world = document.querySelector('#world');
 
@@ -210,6 +219,11 @@ function startStopGol(){
 
 function resetWorld() {
     location.reload();
+}
+
+function randomWorld() {
+    randomInitGenArrays();
+    updateWorld();
 }
 
 window.onload=()=>{
