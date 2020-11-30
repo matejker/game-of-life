@@ -1,7 +1,7 @@
 .penta {
     float: left;
     margin-right: -7px;
-    margin-bottom: -12px;
+    margin-bottom: -11px;
 }
 
 .penta .left1 {
@@ -103,20 +103,20 @@
 
 .penta .middle-ort {
     width: 13px;
-    height: 11px;
+    height: 10px;
     background: #efefef;
 }
 
 .penta .middle-ort2 {
     width: 13px;
-    height: 11px;
+    height: 10px;
     background: #efefef;
     float: right;
 }
 
 .penta.left {
     margin-top: 8px;
-    margin-left: 1px;
+    margin-left: 2px;
     position: relative;
     z-index: 5;
 }
@@ -128,7 +128,7 @@
 }
 
 .penta.top {
-    margin-top: 0px;
+    margin-top: -1px;
 }
 
 .penta.bottom {
@@ -150,7 +150,7 @@
 }
 
 .tile {
-    width: 55px;
+    width: 56px;
     margin-right: 1px;
     float: left;
 }
