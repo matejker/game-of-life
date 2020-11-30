@@ -70,5 +70,5 @@ https://medium.com/javascript-in-plain-english/the-game-of-life-using-javascript
 [4] Carter Bays (2005) _A Note on the Game of Life in Hexagonal and Pentagonal Tessellations._ 
 https://content.wolfram.com/uploads/sites/13/2018/02/15-3-4.pdf
 
-[4] Teruhisa Sugimoto, Tohru Ogawa (2000), _Tiling Problem of Convex Pentagon._
+[5] Teruhisa Sugimoto, Tohru Ogawa (2000), _Tiling Problem of Convex Pentagon._
 https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.106.1383&rep=rep1&type=pdf
