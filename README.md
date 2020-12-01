@@ -1,4 +1,4 @@
-# Game of Life
+# Game of Life in Hexagonal, Pentagonal and Other Tessellations 
 > That game of life is hard to play  
 I'm gonna lose it anyway  
 The losing card I'll someday lay  
@@ -58,6 +58,20 @@ if for a given cell:
 
 ![](./docs/glider/shrimp.png)  
 A :fried_shrimp: example of pentagonal _glider_ on `2,3/3,4,6`, it has period 48 and moves 6 units up.
+
+## Usage
+Feel more that free to use, modify and copy the code, just follow the [licence](./LICENSE.txt) and cite it:
+
+```tex
+@misc{Kerekrety2020,
+  author = {Kerekrety, M},
+  title = {Game of Life in Hexagonal, Pentagonal and Other Tessellations},
+  year = {2020},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/matejker/game-of-life}}
+}
+```
 
 ## References
 [1] William Poundstone (1985), _The Recursive Universe_, NTC Publishing Group ISBN:978-0-8092-5202-2
