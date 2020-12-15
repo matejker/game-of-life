@@ -1,0 +1,23 @@
+table {
+    background-color: #efefef;
+    margin: auto;
+}
+
+td {
+    border: 0px;
+    width: 3px;
+    height: 3px;
+}
+
+td.alive {
+    background: #888;
+}
+
+td.floor {
+    background: #fff;
+}
+
+#world {
+    text-align: center;
+    width: 100%;
+}

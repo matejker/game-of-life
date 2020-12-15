@@ -74,9 +74,9 @@ function createNextGen() {
             if (neighbors == 2) {
                 nextGen[row][col] = currGen[row][col]
             } else if (neighbors == 3) {
-                nextGen[row][col] = 1
+                nextGen[row][col] = 1;
             } else {
-                nextGen[row][col] = 0
+                nextGen[row][col] = 0;
             }
         }
     }
@@ -91,8 +91,8 @@ function getNeighborCount(row, col) {
     let j = 0;
 
     for (p in perm) {
-        i = perm[p][0]
-        j = perm[p][1]
+        i = perm[p][0];
+        j = perm[p][1];
 
         if ((nrow + i >= 0)  && (nrow + i < n) && (ncol + j >= 0)  && (ncol + j < m)) {
             count += currGen[nrow + i][ncol + j];

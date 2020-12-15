@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./grid/aoc.css" />
+    <title>Game of Seats 2 - Advent of Code 2020</title>
+</head>
+    <body>
+
+        <div id="world">
+            <input type="button" id="btnstartstop" value="Start Reproducing" onclick="startStopGol();" />
+            <input type="button" id="btnreset" value="Reset World" onclick="resetWorld();" />
+            <input type="button" value="Next" onclick="evolve();" />
+            <input type="range" min="1" max="1000" value="100" id="speed" oninput="setSpeed(this.value)" onchange="setSpeed(this.value)" />
+            <strong>Generation: </strong> <span id="generation">0</span>
+            <br><br>
+        </div>
+        <script src="aoc2.js"></script>
+</body>
+</html>
