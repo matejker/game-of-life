@@ -70,7 +70,7 @@ diagonal from the seat). The following rules are applied to every seat simultane
 > - If a seat is empty (L) and there are no occupied seats adjacent to it, the seat becomes occupied.
 > - If a seat is occupied (#) and four or more seats adjacent to it are also occupied, the seat becomes empty.
 > - Otherwise, the seat's state does not change.  
-> Floor (.) never changes; seats don't move, and nobody sits on the floor. 
+> Floor (.) never changes; seats don't move, and nobody sits on the floor. [6]
 
 Here is a live demo for my puzzle: [Part 1](https://matejker.github.io/game-of-life/aoc.html), 
 [Part 2](https://matejker.github.io/game-of-life/aoc.html)
@@ -102,3 +102,5 @@ https://content.wolfram.com/uploads/sites/13/2018/02/15-3-4.pdf
 
 [5] Teruhisa Sugimoto, Tohru Ogawa (2000), _Tiling Problem of Convex Pentagon._
 https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.106.1383&rep=rep1&type=pdf
+
+[6] Eric Wastl (2020), _Advent of Code 2020_, https://adventofcode.com/2020
