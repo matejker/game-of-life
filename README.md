@@ -59,6 +59,22 @@ if for a given cell:
 ![](./docs/glider/shrimp.png)  
 A :fried_shrimp: example of pentagonal _glider_ on `2,3/3,4,6`, it has period 48 and moves 6 units up.
 
+
+### Advent of Code 2020 - Seating System [[Part 1](https://matejker.github.io/game-of-life/aoc.html)], [[Part 2](https://matejker.github.io/game-of-life/aoc2.html)]
+A variation of _Cellular Automata_ was used as a puzzle in [Advent of Code 2020 on Day 13](https://adventofcode.com/2020/day/11).
+The idea was to simulate occupation of seats in waiting area as more and more people arrive, with given rules:
+
+> Fortunately, people are entirely predictable and always follow a simple set of rules. All decisions are based on the 
+number of occupied seats adjacent to a given seat (one of the eight positions immediately up, down, left, right, or 
+diagonal from the seat). The following rules are applied to every seat simultaneously: 
+> - If a seat is empty (L) and there are no occupied seats adjacent to it, the seat becomes occupied.
+> - If a seat is occupied (#) and four or more seats adjacent to it are also occupied, the seat becomes empty.
+> - Otherwise, the seat's state does not change.  
+> Floor (.) never changes; seats don't move, and nobody sits on the floor. 
+
+Here is a live demo for my puzzle: [Part 1](https://matejker.github.io/game-of-life/aoc.html), 
+[Part 2](https://matejker.github.io/game-of-life/aoc.html)
+
 ## Usage
 Feel more that free to use, modify and copy the code, just follow the [licence](./LICENSE.txt) and cite it:
 
