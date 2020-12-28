@@ -1,27 +1,23 @@
-const n = 25;
-const m = 17;
+const n = 15;
+const m = 65;
 
+const rhombusMovesEven = {
+    top: [[0, 0, 'left'], [0, 0, 'right'], [0, 2, 'top'], [0, 2, 'left'], [0, -2, 'top'], [0, -2, 'right'], [0, -1, 'right'], [0, -1, 'left'], [0, 1, 'right'], [0, 1, 'left']],
+    left: [[0, 0, 'top'], [0, 0, 'right'], [0, -2, 'right'], [0, -2, 'top'], [0, -1, 'left'], [0, -1, 'right'], [1, -1, 'right'], [1, -1, 'top'], [1, 1, 'left'], [1, 1, 'top']],
+    right: [[0, 0, 'top'], [0, 0, 'left'], [0, 2, 'left'], [0, 2, 'top'], [0, 1, 'right'], [0, 1, 'left'], [1, 1, 'top'], [1, 1, 'left'], [1, -1, 'right'], [1, -1, 'top']],
+}
+
+const rhombusMovesOdd = {
+    top: [[0, 0, 'left'], [0, 0, 'right'], [0, 2, 'top'], [0, 2, 'left'], [-1, -1, 'right'], [-1, -1, 'left'], [-1, 1, 'right'], [-1, 1, 'left'], [0, -2, 'right'], [0, -2, 'top']],
+    left: [[0, 0, 'top'], [0, 0, 'right'], [0, -2, 'right'], [0, -2, 'top'], [-1, -1, 'right'], [-1, -1, 'left'], [0, -1, 'right'], [0, -1, 'top'], [0, 1, 'left'], [0, 1, 'top']],
+    right: [[0, 0, 'top'], [0, 0, 'left'], [0, 1, 'top'], [0, 1, 'left'], [0, -1, 'right'], [0, -1, 'top'], [0, 2, 'left'], [0, 2, 'top'], [-1, 1, 'right'], [-1, 1, 'left']],
+}
+
+const moves = ['top', 'left', 'right']
 const tileParts = {
-    left: ['right3', 'top3', 'middle-ort', 'bottom3'],
-    top: ['top1', 'left1', 'middle', 'right1'],
-    bottom: ['left2', 'middle', 'right2', 'bottom2'],
-    right: ['left4', 'top4', 'middle-ort2', 'bottom4'],
-}
-
-const moves = ['left', 'top', 'bottom', 'right']
-
-const pentaMovesEven = {
-    left: [[0, 0, 'top'], [0, 0, 'bottom'], [-1, 0, 'bottom'], [-1, 0, 'right'], [0, -1, 'right'], [1, 0, 'right'], [1, 0, 'top']],
-    top: [[0, 0, 'bottom'], [0, 0, 'left'], [0, 0, 'right'], [-1, 0, 'right'], [-1, 0, 'bottom'], [-1, 1, 'left'], [-1, 1, 'bottom']],
-    bottom: [[0, 0, 'top'], [0, 0, 'left'], [0, 0, 'right'], [1, 0, 'top'], [1, 0, 'right'], [1, 1, 'top'], [1, 1, 'left']],
-    right: [[0, 0, 'top'], [0, 0, 'bottom'], [1, 1, 'top'], [1, 1, 'left'], [-1, 1, 'bottom'], [-1, 1, 'left'], [0, 1, 'left']],
-}
-
-const pentaMovesOdd = {
-    left: [[0, 0, 'top'], [0, 0, 'bottom'], [-1, -1, 'bottom'], [-1, -1, 'right'], [0, -1, 'right'], [1, -1, 'top'], [1, -1, 'right']],
-    top: [[0, 0, 'bottom'], [0, 0, 'left'], [0, 0, 'right'], [-1, -1, 'bottom'], [-1, -1, 'right'], [-1, 0, 'left'], [-1, 0, 'bottom']],
-    bottom: [[0, 0, 'top'], [0, 0, 'left'], [0, 0, 'right'], [1, -1, 'top'], [1, -1, 'right'], [1, 0, 'left'], [1, 0, 'top']],
-    right: [[0, 0, 'top'], [0, 0, 'bottom'], [-1, 0, 'left'], [-1, 0, 'bottom'], [0, 1, 'left'], [1, 0, 'top'], [1, 0, 'left']],
+    top: ['top', 'bottom'],
+    left: ['top', 'middle', 'bottom'],
+    right: ['top', 'middle', 'bottom']
 }
 
 let started = false;
@@ -46,8 +42,8 @@ function createGenArrays() {
 function initGenArrays() {
     for (let i = 0; i < n; i++) {
         for (let j = 0; j < m; j++) {
-            currGen[i][j] = {left: 0, top: 0, bottom: 0, right: 0};
-            nextGen[i][j] = {left: 0, top: 0, bottom: 0, right: 0};
+            currGen[i][j] = {top: 0, left: 0, right: 0};
+            nextGen[i][j] = {top: 0, left: 0, right: 0};
         }
     }
 }
@@ -55,8 +51,8 @@ function initGenArrays() {
 function randomInitGenArrays() {
     for (let i = 0; i < n; i++) {
         for (let j = 0; j < m; j++) {
-            currGen[i][j] = {left: Math.round(Math.random()), top: Math.round(Math.random()), bottom: Math.round(Math.random()), right: Math.round(Math.random())};
-            nextGen[i][j] = {left: Math.round(Math.random()), top: Math.round(Math.random()), bottom: Math.round(Math.random()), right: Math.round(Math.random())};
+            currGen[i][j] = {top: Math.round(Math.random()), left: Math.round(Math.random()), right: Math.round(Math.random())};
+            nextGen[i][j] = {top: Math.round(Math.random()), left: Math.round(Math.random()), right: Math.round(Math.random())};
         }
     }
 }
@@ -66,16 +62,16 @@ function createWorld() {
 
     for (let i = 0; i < n; i++) {
         let row = document.createElement('div');
-        row.setAttribute('class', (i % 2) ? 'penta-row even' : 'penta-row');
+        row.setAttribute('class', 'hex-row');
 
         for (let j = 0; j < m; j++) {
-            let tile = document.createElement('div');
-            tile.setAttribute('class', 'tile');
+            let hex = document.createElement('div');
+            hex.setAttribute('class', (j % 2) ? 'hex even' : 'hex');
 
             setTiles = {}
             for (t in tileParts) {
                 setTiles[t] = document.createElement('div')
-                setTiles[t].setAttribute('class', 'penta ' + t + ' dead');
+                setTiles[t].setAttribute('class', 'rhombus ' + t + ' dead');
                 setTiles[t].setAttribute('id', i + '_' + j + '_' + t);
                 setTiles[t].addEventListener('click', cellClick);
 
@@ -86,10 +82,10 @@ function createWorld() {
                     setTiles[t].appendChild(setSubTiles[s]);
                 }
 
-                tile.appendChild(setTiles[t]);
+                hex.appendChild(setTiles[t]);
             }
 
-            row.appendChild(tile);
+            row.appendChild(hex);
         }
     world.appendChild(row);
     }
@@ -117,17 +113,15 @@ function createNextGen() {
             for (p in moves) {
                 pos = moves[p]
                 let neighbors = getNeighborCount(row, col, pos);
-                // Using the 2,3/3,4,6
+                 // Using 3,5/2 rule
                 if (neighbors == 2) {
                     nextGen[row][col][pos] = currGen[row][col][pos];
                 } else if (neighbors == 3) {
                     nextGen[row][col][pos] = 1;
-                } else if (currGen[row][col][pos] == 0 && (neighbors == 4 || neighbors == 6)) {
-                    nextGen[row][col][pos] = 1;
                 } else {
                     nextGen[row][col][pos] = 0;
                 }
-            }
+             }
         }
     }
 }
@@ -142,15 +136,15 @@ function getNeighborCount(row, col, pos) {
     let j = 0;
     let q = '';
 
-    for (p in pentaMovesEven[npos]) {
-        if (nrow % 2) {
-            i = pentaMovesEven[npos][p][0];
-            j = pentaMovesEven[npos][p][1];
-            q = pentaMovesEven[npos][p][2];
+    for (p in rhombusMovesEven[npos]) {
+        if (ncol % 2) {
+            i = rhombusMovesEven[npos][p][0];
+            j = rhombusMovesEven[npos][p][1];
+            q = rhombusMovesEven[npos][p][2];
         } else {
-            i = pentaMovesOdd[npos][p][0];
-            j = pentaMovesOdd[npos][p][1];
-            q = pentaMovesOdd[npos][p][2];
+            i = rhombusMovesOdd[npos][p][0];
+            j = rhombusMovesOdd[npos][p][1];
+            q = rhombusMovesOdd[npos][p][2];
         }
 
         if ((nrow + i >= 0)  && (nrow + i < n) && (ncol + j >= 0)  && (ncol + j < m)) {
@@ -164,7 +158,7 @@ function updateCurrGen() {
     for (row in currGen) {
         for (col in currGen[row]) {
             currGen[row][col] = nextGen[row][col];
-            nextGen[row][col] = {left: 0, top: 0, bottom: 0, right: 0};
+            nextGen[row][col] = {top: 0, left: 0, right: 0};
         }
     }
 }
@@ -175,18 +169,17 @@ function updateWorld() {
         for (col in currGen[row]) {
             for (p in moves) {
                 cell = document.getElementById(row + '_' + col + '_' + moves[p]);
-                let existingClasses = cell.className.split(" ").slice(0, -1).join(' ');
+                let existingClasses = cell.className.split(" ").slice(0, -1).join(' ')
 
                 if (currGen[row][col][moves[p]] == 0) {
                     cell.setAttribute('class', existingClasses + ' dead');
                 } else {
                     cell.setAttribute('class', existingClasses + ' alive');
                 }
-            }
+             }
         }
     }
 }
-
 
 function evolve(){
     createNextGen();

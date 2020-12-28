@@ -60,6 +60,11 @@ if for a given cell:
 A :fried_shrimp: example of pentagonal _glider_ on `2,3/3,4,6`, it has period 48 and moves 6 units up.
 
 
+### Rhomboidal [[Live demo](https://matejker.github.io/game-of-life/rhombille.html)]
+Rhomboidal tiling is formed by dividing each hexagon in regular hexagonal tilings into 3 regular rhombi [8]. Such grid 
+has high connectivity as each rhombus has 10 neighbours. We can use the original `2,3/3` rule as in orthogonal grid.
+
+
 ### Advent of Code 2020 - Seating System [[Part 1](https://matejker.github.io/game-of-life/aoc.html)], [[Part 2](https://matejker.github.io/game-of-life/aoc2.html)]
 A variation of _Cellular Automata_ was used as a puzzle in [Advent of Code 2020 on Day 13](https://adventofcode.com/2020/day/11).
 The idea was to simulate occupation of seats in waiting area as more and more people arrive, with given rules:
@@ -103,4 +108,8 @@ https://content.wolfram.com/uploads/sites/13/2018/02/15-3-4.pdf
 [5] Teruhisa Sugimoto, Tohru Ogawa (2000), _Tiling Problem of Convex Pentagon._
 https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.106.1383&rep=rep1&type=pdf
 
-[6] Eric Wastl (2020), _Advent of Code 2020_, https://adventofcode.com/2020
+[6] Eric Wastl (2020), _Advent of Code 2020_, https://adventofcode.com/2020  
+
+[7] Peter Taylor (2014), _Implement the Game of Life on Anything but a Regular Grid > Rhombille_, https://codegolf.stackexchange.com/a/36176
+
+[8] Wikimedia (?), _Rhombille tiling_, https://en.wikipedia.org/wiki/Rhombille_tiling

@@ -1,0 +1,105 @@
+.hex {
+    float: left;
+    margin-right: -14px;
+    margin-bottom: 1px;
+    width: 30px;
+}
+
+.rhombus.top {
+    height: 14px;
+    width: 28px;
+    margin-left: 1px;
+}
+
+.rhombus.top .top{
+    float: left;
+    border-bottom: 7px solid #efefef;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+
+}
+
+.rhombus.top .bottom {
+    float: left;
+    border-top: 7px solid #efefef;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+}
+
+.rhombus.left {
+    height: 14px;
+    width: 14px;
+    float: left;
+    margin-top: -6px;
+}
+
+.rhombus.right {
+    height: 14px;
+    width: 14px;
+    float: right;
+    margin-top: -6px;
+}
+
+.rhombus.left .top{
+    float: left;
+    border-bottom: 7px solid #efefef;
+    border-right: 14px solid transparent;
+}
+
+.rhombus.left .middle {
+   background: #efefef;
+   width: 14px;
+   height: 7px;
+   float: left;
+}
+
+.rhombus.left .bottom {
+    float: left;
+    border-top: 7px solid #efefef;
+    border-left: 14px solid transparent;
+}
+
+.rhombus.right .top{
+    float: left;
+    border-bottom: 7px solid #efefef;
+    border-left: 14px solid transparent;
+}
+
+.rhombus.right .middle {
+   background: #efefef;
+   width: 14px;
+   height: 7px;
+   float: left;
+}
+
+.rhombus.right .bottom {
+    float: left;
+    border-top: 7px solid #efefef;
+    border-right: 14px solid transparent;
+}
+
+.rhombus.right.alive .top, .rhombus.left.alive .top, .rhombus.top.alive .top {
+    border-bottom: 7px solid #888;
+}
+
+.rhombus.right.alive .middle, .rhombus.left.alive .middle {
+    background: #888;
+}
+
+.rhombus.left.alive .bottom, .rhombus.right.alive .bottom, .rhombus.top.alive .bottom {
+    border-top: 7px solid #888;
+}
+
+.hex-row {
+    clear: left;
+}
+
+.hex.even {
+    margin-top: 23px;
+}
+
+#world {
+    text-align: center;
+    margin: 10px auto;
+    width: 1050px;
+}
