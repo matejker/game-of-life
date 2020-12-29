@@ -43,6 +43,15 @@ function initGenArrays() {
     }
 }
 
+function randomInitGenArrays() {
+    for (let i = 0; i < n; i++) {
+        for (let j = 0; j < m; j++) {
+            currGen[i][j] = Math.round(Math.random());
+            nextGen[i][j] = Math.round(Math.random());
+        }
+    }
+}
+
 function createWorld() {
     let world = document.querySelector('#world');
 
@@ -189,4 +198,9 @@ window.onload=()=>{
     createWorld();
     createGenArrays();
     initGenArrays();
+}
+
+function randomWorld() {
+    randomInitGenArrays();
+    updateWorld();
 }

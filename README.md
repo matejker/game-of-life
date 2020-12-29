@@ -62,8 +62,13 @@ A :fried_shrimp: example of pentagonal _glider_ on `2,3/3,4,6`, it has period 48
 
 ### Rhomboidal [[Live demo](https://matejker.github.io/game-of-life/rhombille.html)]
 Rhomboidal tiling is formed by dividing each hexagon in regular hexagonal tilings into 3 regular rhombi [8]. Such grid 
-has high connectivity as each rhombus has 10 neighbours. We can use the original `2,3/3` rule as in orthogonal grid.
+has high connectivity as each rhombus has 10 neighbours, which is called _Q*bert neighborhood_ [8]. We can use the original `2,3/3` rule as in orthogonal grid.
 
+Interestingly, we can find plenty of _still lifes_ and _infinite growth_ generators, but very little of gilders and 
+oscillators. On a picture below, we can see a small fraction of _still lifes_.
+![](./rhomboidal.png)   
+
+[Live demo](https://matejker.github.io/game-of-life/rhombille.html) of _Rhomboidal_ Game of Life :diamonds:.
 
 ### Advent of Code 2020 - Seating System [[Part 1](https://matejker.github.io/game-of-life/aoc.html)], [[Part 2](https://matejker.github.io/game-of-life/aoc2.html)]
 A variation of _Cellular Automata_ was used as a puzzle in [Advent of Code 2020 on Day 13](https://adventofcode.com/2020/day/11).

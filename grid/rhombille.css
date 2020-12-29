@@ -9,6 +9,7 @@
     height: 14px;
     width: 28px;
     margin-left: 1px;
+    z-index: 5;
 }
 
 .rhombus.top .top{
