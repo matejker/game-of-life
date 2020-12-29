@@ -62,7 +62,11 @@ A :fried_shrimp: example of pentagonal _glider_ on `2,3/3,4,6`, it has period 48
 
 ### Rhomboidal [[Live demo](https://matejker.github.io/game-of-life/rhombille.html)]
 Rhomboidal tiling is formed by dividing each hexagon in regular hexagonal tilings into 3 regular rhombi [8]. Such grid 
-has high connectivity as each rhombus has 10 neighbours, which is called _Q*bert neighborhood_ [8]. We can use the original `2,3/3` rule as in orthogonal grid.
+has high connectivity as each rhombus has 10 neighbours, which is called _Q*bert neighborhood_ [8]. We can use the 
+original `2,3/3` rule as in orthogonal grid, if for a given cell:
+1. the number of live neighbours is exactly 2, the cell maintains its status quo into the next generation; `(0 -> 0)`, `(1 -> 1)`
+2. the number of live neighbours is exactly 3, the cell will live in the next generation; `(0 -> 1)`, `(1 -> 1)`
+3. the number of live neighbours is 1, 4,..., the cell won't live in the next generation; `(0 -> 0)`, `(1 -> 0)`
 
 Interestingly, we can find plenty of _still lifes_ and _infinite growth_ generators, but very little of gilders and 
 oscillators. On a picture below, we can see a small fraction of _still lifes_.
