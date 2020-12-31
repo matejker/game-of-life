@@ -75,7 +75,7 @@ oscillators. On a picture below, we can see a small fraction of _still lifes_.
 [Live demo](https://matejker.github.io/game-of-life/rhombille.html) of _Rhomboidal_ Game of Life :diamonds:.
 
 
-## Sphinxonal
+## Sphinxonal [[Live demo](https://matejker.github.io/game-of-life/sphinx.html)]
 A _sphinx_ polygon consists of six equilateral triangles and its simplest periodic tiling [9] where two 
 sphinxes fit into a _parallelogram_. In such periodic tiling, each cell has 12 neighbours (highest among all previously
 listed tilings). We can use the original `2,3/3` rule as in orthogonal grid, if for a given cell:
@@ -83,7 +83,7 @@ listed tilings). We can use the original `2,3/3` rule as in orthogonal grid, if 
 2. the number of live neighbours is exactly 3, the cell will live in the next generation; `(0 -> 1)`, `(1 -> 1)`
 3. the number of live neighbours is 1, 4,..., the cell won't live in the next generation; `(0 -> 0)
 
-[Live demo](https://matejker.github.io/game-of-life/rhombille.html) of _Sphinxonal_ Game of Life :cat2:.
+[Live demo](https://matejker.github.io/game-of-life/sphinx.html) of _Sphinxonal_ Game of Life :cat2:.
 
 _Much more interesting is tiling using _sphinx_ is used by [Lee and Mood](https://tilings.math.uni-bielefeld.de/substitution/sphinx/) in [10]._
 ### Advent of Code 2020 - Seating System [[Part 1](https://matejker.github.io/game-of-life/aoc.html)], [[Part 2](https://matejker.github.io/game-of-life/aoc2.html)]
