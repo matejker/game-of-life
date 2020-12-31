@@ -113,7 +113,7 @@ function createNextGen() {
             for (p in moves) {
                 pos = moves[p]
                 let neighbors = getNeighborCount(row, col, pos);
-                 // Using 3,5/2 rule
+                 // Using 2,3/3 rule
                 if (neighbors == 2) {
                     nextGen[row][col][pos] = currGen[row][col][pos];
                 } else if (neighbors == 3) {

@@ -74,6 +74,18 @@ oscillators. On a picture below, we can see a small fraction of _still lifes_.
 
 [Live demo](https://matejker.github.io/game-of-life/rhombille.html) of _Rhomboidal_ Game of Life :diamonds:.
 
+
+## Sphinxonal
+A _sphinx_ polygon consists of six equilateral triangles and its simplest periodic tiling [9] where two 
+sphinxes fit into a _parallelogram_. In such periodic tiling, each cell has 12 neighbours (highest among all previously
+listed tilings). We can use the original `2,3/3` rule as in orthogonal grid, if for a given cell:
+1. the number of live neighbours is exactly 2, the cell maintains its status quo into the next generation; `(0 -> 0)`, `(1 -> 1)`
+2. the number of live neighbours is exactly 3, the cell will live in the next generation; `(0 -> 1)`, `(1 -> 1)`
+3. the number of live neighbours is 1, 4,..., the cell won't live in the next generation; `(0 -> 0)
+
+[Live demo](https://matejker.github.io/game-of-life/rhombille.html) of _Sphinxonal_ Game of Life :cat2:.
+
+_Much more interesting is tiling using _sphinx_ is used by [Lee and Mood](https://tilings.math.uni-bielefeld.de/substitution/sphinx/) in [10]._
 ### Advent of Code 2020 - Seating System [[Part 1](https://matejker.github.io/game-of-life/aoc.html)], [[Part 2](https://matejker.github.io/game-of-life/aoc2.html)]
 A variation of _Cellular Automata_ was used as a puzzle in [Advent of Code 2020 on Day 13](https://adventofcode.com/2020/day/11).
 The idea was to simulate occupation of seats in waiting area as more and more people arrive, with given rules:
@@ -104,21 +116,17 @@ Feel more that free to use, modify and copy the code, just follow the [licence](
 ```
 
 ## References
-[1] William Poundstone (1985), _The Recursive Universe_, NTC Publishing Group ISBN:978-0-8092-5202-2
-
+[1] William Poundstone (1985), _The Recursive Universe_, NTC Publishing Group ISBN:978-0-8092-5202-2  
 [2] Rob Tomlin (2020), _The Game of Life Using JavaScript_,  
-https://medium.com/javascript-in-plain-english/the-game-of-life-using-javascript-fc1aaec8274f
-
+https://medium.com/javascript-in-plain-english/the-game-of-life-using-javascript-fc1aaec8274f  
 [3] James Tauber (?), _CSS Hexagon Tutorial._ https://jtauber.github.io/articles/css-hexagon.html  
-
 [4] Carter Bays (2005) _A Note on the Game of Life in Hexagonal and Pentagonal Tessellations._ 
-https://content.wolfram.com/uploads/sites/13/2018/02/15-3-4.pdf
-
+https://content.wolfram.com/uploads/sites/13/2018/02/15-3-4.pdf  
 [5] Teruhisa Sugimoto, Tohru Ogawa (2000), _Tiling Problem of Convex Pentagon._
-https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.106.1383&rep=rep1&type=pdf
-
-[6] Eric Wastl (2020), _Advent of Code 2020_, https://adventofcode.com/2020  
-
-[7] Peter Taylor (2014), _Implement the Game of Life on Anything but a Regular Grid > Rhombille_, https://codegolf.stackexchange.com/a/36176
-
-[8] Wikimedia (?), _Rhombille tiling_, https://en.wikipedia.org/wiki/Rhombille_tiling
+https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.106.1383&rep=rep1&type=pdf  
+[6] Eric Wastl (2020), _Advent of Code 2020_, https://adventofcode.com/2020   
+[7] Peter Taylor (2014), _Implement the Game of Life on Anything but a Regular Grid > Rhombille_, https://codegolf.stackexchange.com/a/36176  
+[8] Wikimedia (?), _Rhombille tiling_, https://en.wikipedia.org/wiki/Rhombille_tiling  
+[9] Wikimedia (?), _Sphinx tiling_, https://en.wikipedia.org/wiki/Sphinx_tiling  
+[10] Lee, J. Y. and Moody, R. V. (2001), _Lattice substitution systems and model sets._, 
+Discrete Comput. Geom. 2001, 25, 2, pp. 173--201, MR1811757, or https://tilings.math.uni-bielefeld.de/substitution/sphinx/

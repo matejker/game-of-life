@@ -1,0 +1,93 @@
+.sphinx {
+    float: left;
+    margin-right: -14px;
+    width: 35px;
+    height: 16px
+}
+
+.sphinx.t {
+    margin-top: -1px;
+}
+
+.sphinx.b {
+    margin-right: -24px;
+}
+
+.sphinx .top, .sphinx .bottom {
+    width: 35px;
+    float: left;
+}
+
+.sphinx .top .left {
+    margin-left: 5px;
+}
+
+.sphinx .bottom .ileft {
+    margin-left: 15px;
+}
+
+.sphinx .block {
+    float: left;
+    width: 20px;
+    height: 7px;
+    background: #efefef;
+}
+
+.sphinx .left {
+    float: left;
+    width: 0;
+    border-right: 5px solid #efefef;
+    border-top: 7px solid transparent;
+}
+
+.sphinx .right {
+    float: left;
+    width: 0;
+    border-left: 5px solid #efefef;
+    border-top: 7px solid transparent;
+}
+
+.sphinx .ileft {
+    float: left;
+    width: 0;
+    border-right: 5px solid #efefef;
+    border-bottom: 7px solid transparent;
+}
+
+.sphinx .iright {
+    float: left;
+    width: 0;
+    border-left: 5px solid #efefef;
+    border-bottom: 7px solid transparent;
+}
+
+.row {
+    clear: left;
+    margin-left: 11px;
+}
+
+.row.one{
+    margin-left: 0px;
+}
+
+.row.two{
+    margin-left: 21px;
+}
+
+.sphinx.alive .right, .sphinx.alive .iright  {
+    border-left: 5px solid #888;
+}
+
+.sphinx.alive .block {
+    background: #888;
+}
+
+.sphinx.alive .left, .sphinx.alive .ileft {
+    border-right: 5px solid #888;
+}
+
+#world {
+    text-align: center;
+    margin: 10px auto;
+    width: 1050px;
+}

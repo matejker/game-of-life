@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sphinxonal Game of Life</title>
+    <link rel="stylesheet" href="./grid/sphinx.css" />
+</head>
+    <body>
+        <div id="world">
+            <input type="button" id="btnstartstop" value="Start Reproducing" onclick="startStopGol();" />
+            <input type="button" id="btnreset" value="Reset World" onclick="resetWorld();" />
+            <input type="button" value="Random World" onclick="randomWorld();" />
+            <input type="button" value="Next" onclick="evolve();" />
+            <input type="range" min="1" max="1000" value="900" id="speed" oninput="setSpeed(this.value)" onchange="setSpeed(this.value)" />
+            <strong>Generation: </strong> <span id="generation">0</span>
+            <br><br>
+        </div>
+        <script src="./sphinx.js"></script>
+    </body>
+</html>

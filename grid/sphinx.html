@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sphinx-gonal Game of Life</title>
+    <link rel="stylesheet" href="./sphinx.css" />
+</head>
+<body>
+<div id="world">
+    <div class="row">
+        <div class="sphinx b dead">
+            <div class="top">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="bottom">
+                <div class="left"></div>
+                <div class="block"></div>
+                <div class="right"></div>
+            </div>
+        </div>
+        <div class="sphinx t">
+            <div class="top">
+                <div class="ileft"></div>
+                <div class="block"></div>
+                <div class="iright"></div>
+            </div>
+            <div class="bottom">
+                <div class="ileft"></div>
+                <div class="iright"></div>
+            </div>
+        </div>
+        <div class="sphinx b">
+            <div class="top">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="bottom">
+                <div class="left"></div>
+                <div class="block"></div>
+                <div class="right"></div>
+            </div>
+        </div>
+        <div class="sphinx t">
+            <div class="top">
+                <div class="ileft"></div>
+                <div class="block"></div>
+                <div class="iright"></div>
+            </div>
+            <div class="bottom">
+                <div class="ileft"></div>
+                <div class="iright"></div>
+            </div>
+        </div>
+        <div class="sphinx b">
+            <div class="top">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="bottom">
+                <div class="left"></div>
+                <div class="block"></div>
+                <div class="right"></div>
+            </div>
+        </div>
+        <div class="sphinx t">
+            <div class="top">
+                <div class="ileft"></div>
+                <div class="block"></div>
+                <div class="iright"></div>
+            </div>
+            <div class="bottom">
+                <div class="ileft"></div>
+                <div class="iright"></div>
+            </div>
+        </div>
+        <div class="sphinx b">
+            <div class="top">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="bottom">
+                <div class="left"></div>
+                <div class="block"></div>
+                <div class="right"></div>
+            </div>
+        </div>
+        <div class="sphinx t">
+            <div class="top">
+                <div class="ileft"></div>
+                <div class="block"></div>
+                <div class="iright"></div>
+            </div>
+            <div class="bottom">
+                <div class="ileft"></div>
+                <div class="iright"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row one">
+        <div class="sphinx b">
+            <div class="top">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="bottom">
+                <div class="left"></div>
+                <div class="block"></div>
+                <div class="right"></div>
+            </div>
+        </div>
+        <div class="sphinx t alive">
+            <div class="top">
+                <div class="ileft"></div>
+                <div class="block"></div>
+                <div class="iright"></div>
+            </div>
+            <div class="bottom">
+                <div class="ileft"></div>
+                <div class="iright"></div>
+            </div>
+        </div>
+        <div class="sphinx b">
+            <div class="top">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="bottom">
+                <div class="left"></div>
+                <div class="block"></div>
+                <div class="right"></div>
+            </div>
+        </div>
+        <div class="sphinx t">
+            <div class="top">
+                <div class="ileft"></div>
+                <div class="block"></div>
+                <div class="iright"></div>
+            </div>
+            <div class="bottom">
+                <div class="ileft"></div>
+                <div class="iright"></div>
+            </div>
+        </div>
+        <div class="sphinx b">
+            <div class="top">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="bottom">
+                <div class="left"></div>
+                <div class="block"></div>
+                <div class="right"></div>
+            </div>
+        </div>
+        <div class="sphinx t">
+            <div class="top">
+                <div class="ileft"></div>
+                <div class="block"></div>
+                <div class="iright"></div>
+            </div>
+            <div class="bottom">
+                <div class="ileft"></div>
+                <div class="iright"></div>
+            </div>
+        </div>
+        <div class="sphinx b">
+            <div class="top">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="bottom">
+                <div class="left"></div>
+                <div class="block"></div>
+                <div class="right"></div>
+            </div>
+        </div>
+        <div class="sphinx t">
+            <div class="top">
+                <div class="ileft"></div>
+                <div class="block"></div>
+                <div class="iright"></div>
+            </div>
+            <div class="bottom">
+                <div class="ileft"></div>
+                <div class="iright"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row two">
+        <div class="sphinx b">
+            <div class="top">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="bottom">
+                <div class="left"></div>
+                <div class="block"></div>
+                <div class="right"></div>
+            </div>
+        </div>
+        <div class="sphinx t alive">
+            <div class="top">
+                <div class="ileft"></div>
+                <div class="block"></div>
+                <div class="iright"></div>
+            </div>
+            <div class="bottom">
+                <div class="ileft"></div>
+                <div class="iright"></div>
+            </div>
+        </div>
+        <div class="sphinx b">
+            <div class="top">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="bottom">
+                <div class="left"></div>
+                <div class="block"></div>
+                <div class="right"></div>
+            </div>
+        </div>
+        <div class="sphinx t">
+            <div class="top">
+                <div class="ileft"></div>
+                <div class="block"></div>
+                <div class="iright"></div>
+            </div>
+            <div class="bottom">
+                <div class="ileft"></div>
+                <div class="iright"></div>
+            </div>
+        </div>
+        <div class="sphinx b">
+            <div class="top">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="bottom">
+                <div class="left"></div>
+                <div class="block"></div>
+                <div class="right"></div>
+            </div>
+        </div>
+        <div class="sphinx t">
+            <div class="top">
+                <div class="ileft"></div>
+                <div class="block"></div>
+                <div class="iright"></div>
+            </div>
+            <div class="bottom">
+                <div class="ileft"></div>
+                <div class="iright"></div>
+            </div>
+        </div>
+        <div class="sphinx b">
+            <div class="top">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="bottom">
+                <div class="left"></div>
+                <div class="block"></div>
+                <div class="right"></div>
+            </div>
+        </div>
+        <div class="sphinx t">
+            <div class="top">
+                <div class="ileft"></div>
+                <div class="block"></div>
+                <div class="iright"></div>
+            </div>
+            <div class="bottom">
+                <div class="ileft"></div>
+                <div class="iright"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="sphinx b">
+            <div class="top">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="bottom">
+                <div class="left"></div>
+                <div class="block"></div>
+                <div class="right"></div>
+            </div>
+        </div>
+        <div class="sphinx t">
+            <div class="top">
+                <div class="ileft"></div>
+                <div class="block"></div>
+                <div class="iright"></div>
+            </div>
+            <div class="bottom">
+                <div class="ileft"></div>
+                <div class="iright"></div>
+            </div>
+        </div>
+        <div class="sphinx b">
+            <div class="top">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="bottom">
+                <div class="left"></div>
+                <div class="block"></div>
+                <div class="right"></div>
+            </div>
+        </div>
+        <div class="sphinx t">
+            <div class="top">
+                <div class="ileft"></div>
+                <div class="block"></div>
+                <div class="iright"></div>
+            </div>
+            <div class="bottom">
+                <div class="ileft"></div>
+                <div class="iright"></div>
+            </div>
+        </div>
+        <div class="sphinx b">
+            <div class="top">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="bottom">
+                <div class="left"></div>
+                <div class="block"></div>
+                <div class="right"></div>
+            </div>
+        </div>
+        <div class="sphinx t">
+            <div class="top">
+                <div class="ileft"></div>
+                <div class="block"></div>
+                <div class="iright"></div>
+            </div>
+            <div class="bottom">
+                <div class="ileft"></div>
+                <div class="iright"></div>
+            </div>
+        </div>
+        <div class="sphinx b">
+            <div class="top">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="bottom">
+                <div class="left"></div>
+                <div class="block"></div>
+                <div class="right"></div>
+            </div>
+        </div>
+        <div class="sphinx t">
+            <div class="top">
+                <div class="ileft"></div>
+                <div class="block"></div>
+                <div class="iright"></div>
+            </div>
+            <div class="bottom">
+                <div class="ileft"></div>
+                <div class="iright"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row one">
+        <div class="sphinx b">
+            <div class="top">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="bottom">
+                <div class="left"></div>
+                <div class="block"></div>
+                <div class="right"></div>
+            </div>
+        </div>
+        <div class="sphinx t alive">
+            <div class="top">
+                <div class="ileft"></div>
+                <div class="block"></div>
+                <div class="iright"></div>
+            </div>
+            <div class="bottom">
+                <div class="ileft"></div>
+                <div class="iright"></div>
+            </div>
+        </div>
+        <div class="sphinx b">
+            <div class="top">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="bottom">
+                <div class="left"></div>
+                <div class="block"></div>
+                <div class="right"></div>
+            </div>
+        </div>
+        <div class="sphinx t">
+            <div class="top">
+                <div class="ileft"></div>
+                <div class="block"></div>
+                <div class="iright"></div>
+            </div>
+            <div class="bottom">
+                <div class="ileft"></div>
+                <div class="iright"></div>
+            </div>
+        </div>
+        <div class="sphinx b">
+            <div class="top">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="bottom">
+                <div class="left"></div>
+                <div class="block"></div>
+                <div class="right"></div>
+            </div>
+        </div>
+        <div class="sphinx t">
+            <div class="top">
+                <div class="ileft"></div>
+                <div class="block"></div>
+                <div class="iright"></div>
+            </div>
+            <div class="bottom">
+                <div class="ileft"></div>
+                <div class="iright"></div>
+            </div>
+        </div>
+        <div class="sphinx b">
+            <div class="top">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="bottom">
+                <div class="left"></div>
+                <div class="block"></div>
+                <div class="right"></div>
+            </div>
+        </div>
+        <div class="sphinx t">
+            <div class="top">
+                <div class="ileft"></div>
+                <div class="block"></div>
+                <div class="iright"></div>
+            </div>
+            <div class="bottom">
+                <div class="ileft"></div>
+                <div class="iright"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row two">
+        <div class="sphinx b">
+            <div class="top">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="bottom">
+                <div class="left"></div>
+                <div class="block"></div>
+                <div class="right"></div>
+            </div>
+        </div>
+        <div class="sphinx t alive">
+            <div class="top">
+                <div class="ileft"></div>
+                <div class="block"></div>
+                <div class="iright"></div>
+            </div>
+            <div class="bottom">
+                <div class="ileft"></div>
+                <div class="iright"></div>
+            </div>
+        </div>
+        <div class="sphinx b">
+            <div class="top">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="bottom">
+                <div class="left"></div>
+                <div class="block"></div>
+                <div class="right"></div>
+            </div>
+        </div>
+        <div class="sphinx t">
+            <div class="top">
+                <div class="ileft"></div>
+                <div class="block"></div>
+                <div class="iright"></div>
+            </div>
+            <div class="bottom">
+                <div class="ileft"></div>
+                <div class="iright"></div>
+            </div>
+        </div>
+        <div class="sphinx b">
+            <div class="top">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="bottom">
+                <div class="left"></div>
+                <div class="block"></div>
+                <div class="right"></div>
+            </div>
+        </div>
+        <div class="sphinx t">
+            <div class="top">
+                <div class="ileft"></div>
+                <div class="block"></div>
+                <div class="iright"></div>
+            </div>
+            <div class="bottom">
+                <div class="ileft"></div>
+                <div class="iright"></div>
+            </div>
+        </div>
+        <div class="sphinx b">
+            <div class="top">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="bottom">
+                <div class="left"></div>
+                <div class="block"></div>
+                <div class="right"></div>
+            </div>
+        </div>
+        <div class="sphinx t">
+            <div class="top">
+                <div class="ileft"></div>
+                <div class="block"></div>
+                <div class="iright"></div>
+            </div>
+            <div class="bottom">
+                <div class="ileft"></div>
+                <div class="iright"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
