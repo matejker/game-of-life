@@ -81,7 +81,10 @@ sphinxes fit into a _parallelogram_. In such periodic tiling, each cell has 12 n
 listed tilings). We can use the original `2,3/3` rule as in orthogonal grid, if for a given cell:
 1. the number of live neighbours is exactly 2, the cell maintains its status quo into the next generation; `(0 -> 0)`, `(1 -> 1)`
 2. the number of live neighbours is exactly 3, the cell will live in the next generation; `(0 -> 1)`, `(1 -> 1)`
-3. the number of live neighbours is 1, 4,..., the cell won't live in the next generation; `(0 -> 0)
+3. the number of live neighbours is 1, 4,..., the cell won't live in the next generation; `(0 -> 0)`
+
+This tiling is rich on oscillators. 
+![](./sphinx.gif)
 
 [Live demo](https://matejker.github.io/game-of-life/sphinx.html) of _Sphinxonal_ Game of Life :cat2:.
 
