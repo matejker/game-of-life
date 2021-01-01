@@ -88,7 +88,7 @@ This tiling is rich on oscillators.
 
 [Live demo](https://matejker.github.io/game-of-life/sphinx.html) of _Sphinxonal_ Game of Life :cat2:.
 
-_Much more interesting is tiling using _sphinx_ is used by [Lee and Mood](https://tilings.math.uni-bielefeld.de/substitution/sphinx/) in [10]._
+_Much more interesting tiling using _sphinx_ is used by [Lee and Mood](https://tilings.math.uni-bielefeld.de/substitution/sphinx/) in [10]._
 ### Advent of Code 2020 - Seating System [[Part 1](https://matejker.github.io/game-of-life/aoc.html)], [[Part 2](https://matejker.github.io/game-of-life/aoc2.html)]
 A variation of _Cellular Automata_ was used as a puzzle in [Advent of Code 2020 on Day 13](https://adventofcode.com/2020/day/11).
 The idea was to simulate occupation of seats in waiting area as more and more people arrive, with given rules:
