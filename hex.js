@@ -1,5 +1,5 @@
-const n = 25;
-const m = 45;
+const n = 50;
+const m = 80;
 
 // Even row
 //         (-1, 0)

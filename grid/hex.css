@@ -1,34 +1,34 @@
 .hex {
     float: left;
-    margin-right: -6px;
-    margin-bottom: -12px;
+    margin-right: -3px;
+    margin-bottom: -6px;
 }
 
 .hex .left {
     float: left;
     width: 0;
-    border-right: 7px solid #efefef;
-    border-top: 13px solid transparent;
-    border-bottom: 13px solid transparent;
+    border-right: 4px solid #efefef;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
 }
 
 .hex .middle {
     float: left;
-    width: 15px;
-    height: 26px;
+    width: 8px;
+    height: 14px;
     background: #efefef;
 }
 
 .hex .right {
     float: left;
     width: 0;
-    border-left: 7px solid #efefef;
-    border-top: 13px solid transparent;
-    border-bottom: 13px solid transparent;
+    border-left: 4px solid #efefef;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
 }
 
 .hex.alive .right  {
-    border-left: 7px solid #888;
+    border-left: 4px solid #888;
 }
 
 .hex.alive .middle {
@@ -36,7 +36,7 @@
 }
 
 .hex.alive .left {
-    border-right: 7px solid #888;
+    border-right: 4px solid #888;
 }
 
 .hex-row {
@@ -44,7 +44,7 @@
 }
 
 .hex.even {
-    margin-top: 14px;
+    margin-top: 7px;
 }
 
 #world {
